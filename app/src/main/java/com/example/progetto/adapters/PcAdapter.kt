@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.progetto.Pc
+import com.example.progetto.model.Pc
 import com.example.progetto.R
 
 class PcAdapter(private val pcList:ArrayList<Pc>)

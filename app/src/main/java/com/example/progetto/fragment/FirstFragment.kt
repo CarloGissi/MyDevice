@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.progetto.DetailedActivity
-import com.example.progetto.Pc
+import com.example.progetto.model.Pc
 import com.example.progetto.R
 import com.example.progetto.adapters.PcAdapter
 
@@ -20,20 +20,22 @@ class FirstFragment: Fragment(){
     private lateinit var pcAdapter: PcAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        //1.event
         super.onCreate(savedInstanceState)
 
     }
 
     override fun onCreateView(
+        //2.event
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
 
         return inflater.inflate(R.layout.fragment_first, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        //3.event
         super.onViewCreated(view, savedInstanceState);
 
         recyclerView = view.findViewById(R.id.recyclerView)
